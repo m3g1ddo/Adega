@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/output.css" />
+    <title>Distribuidora will</title>
+  </head>
+  <body>
+    <!--- header -->
+    <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
+      <div class="w-full h-full flex flex-col justify-center items-center">
+        <img
+          src="./assets/w1.png"
+          alt="logo de primordial adega"
+          class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200"
+        />
+        <h1 class="text-4xl mt-4 mb-2 font-bold text-white">
+          Primordial Adega
+        </h1>
+        <span class="text-white font-medium">Rua Áres 3, São Paulo - SP</span>
+        <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="data-span">
+          <span class="text-white font-medium">
+            Seg á Dom - 19:00 as 23:00
+          </span>
+        </div>
+      </div>
+    </header>
+    <!-- FIM HEADER -->
+    <h2 class="text-2xl md:text-5xl font-bold text-center mt-9 mb-6">
+      Menu Bebidas
+    </h2>
+    <!-- INICO MENU -->
+    <div id="menu">
+      <main
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-10 gap-7 mx-auto max-w-7xl px-2 mb-16"
+      >
+        <!-- PRODUTO ITEM -->
+        <div class="flex gap-2">
+          <img
+            id="imgw"
+            src="./assets/coca1.png"
+            alt="coca garrafa"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+
+          <div class="w-full">
+            <p class="font-bold">Coca 250ml</p>
+            <p class="text-sm">a gelada que não pode faltar no seu dia a dia</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 4,50</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="Coca 250ml"
+                data-price="4.50"
+              >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- PRODUTO ITEM -->
+
+        <div class="flex gap-2">
+          <img
+            src="./assets/hei.png"
+            alt="Heineken 330ml"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+
+          <div class="w-full">
+            <p class="font-bold">Heineken 330ml</p>
+            <p class="text-sm">A gelada que não pode faltar em seu dia a dia</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 9,60</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="Heineken 330ml"
+                data-price="9.60"
+              >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- PRODUTO ITEM -->
+        <!-- PRODUTO ITEM -->
+
+        <div class="flex gap-2">
+          <img
+            src="./assets/whisky1.png"
+            alt="Whiskey Jack Daniel's 1L"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+
+          <div class="w-full">
+            <p class="font-bold">Whiskey Jack Daniel's 1L</p>
+            <p class="text-sm">A gelada que não pode faltar em seu dia a dia</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 148,00</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="Whiskey Jack Daniel's 1L"
+                data-price="148.00"
+              >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- PRODUTO ITEM -->
+        <!-- PRODUTO ITEM -->
+
+        <div class="flex gap-2">
+          <img
+            src="./assets/vodka.png"
+            alt="Heineken 330ml"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+
+          <div class="w-full">
+            <p class="font-bold">Vodka Absolut 1L</p>
+            <p class="text-sm">A gelada que não pode faltar em seu dia a dia</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 95,90</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="Vodka Absolut 1L"
+                data-price="95.90"
+              >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- PRODUTO ITEM -->
+
+        <!-- PRODUTO ITEM -->
+        <div class="flex gap-2">
+          <img
+            src="./assets/GIN-DOBER.png"
+            alt="GIN-DOBER"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+
+          <div class="w-full">
+            <p class="font-bold">Gin Dober Melancia 900ml</p>
+            <p class="text-sm">a gelada que não pode faltar no seu dia a dia</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 44,95</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="GIN-DOBER"
+                data-price="44.95"
+              >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- PRODUTO ITEM -->
+
+        <!-- PRODUTO ITEM -->
+        <div class="flex gap-2">
+          <img
+            src="./assets/Redbull.png"
+            alt="Red Bull 250ml"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+
+          <div class="w-full">
+            <p class="font-bold">Red Bull 250ml</p>
+            <p class="text-sm">a gelada que não pode faltar no seu dia a dia</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 11,50</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="RedBuull 250ml"
+                data-price="11.50"
+              >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- FIM PRODUTO ITEM -->
+      </main>
+
+      <div class="mx-auto max-w-7xl px-2 my-2">
+        <h2 class="font-bold text-3xl">Petiscos</h2>
+      </div>
+
+      <!-- GRID PETISCOS -->
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-10 gap-7 mx-auto max-w-7xl px-2 mb-16"
+        id="menu"
+      >
+        <div class="flex gap-2">
+          <img
+            src="./assets/Ruffles.png"
+            alt="Red Bull 250ml"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+
+          <div class="w-full">
+            <p class="font-bold">Ruffles</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 12.45</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="Ruffles"
+                data-price="12.45"
+              >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2">
+          <img
+            src="./assets/Doritos.webp"
+            alt="Red Bull 250ml"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+
+          <div class="w-full">
+            <p class="font-bold">Doritos 45g</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 9.45</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="Doritos"
+                data-price="9.45"
+              >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2">
+          <img
+            src="./assets/Cheetos.png"
+            alt="Cheetos 40g"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+
+          <div class="w-full">
+            <p class="font-bold">Cheetos 40g</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 2.75</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="Cheetos"
+                data-price="2.75"
+              >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2">
+          <img
+            src="./assets/Cebolitos.png"
+            alt="Cebolitos"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+
+          <div class="w-full">
+            <p class="font-bold">Cebolitos 60g</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 5.99</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="Cebolitos 60g"
+                data-price="5.99"
+              >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2">
+          <img
+            src="./assets/Lay's.png"
+            alt="Lays"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+
+          <div class="w-full">
+            <p class="font-bold">Lays 70g</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 9.99</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="Lays 70g"
+                data-price="9.99"
+              >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-2">
+          <img
+            src="./assets/Sensações Peito de Peru.png"
+            alt="Sensações 40g"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+          />
+
+          <div class="w-full">
+            <p class="font-bold">Sensações 40g</p>
+
+            <div class="flex items-center gap-2 justify-between mt-3">
+              <p class="font-bold text-lg">R$ 6.99</p>
+              <button
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="Sensações 40g"
+                data-price="6.99"
+              >
+                <i class="fa fa-cart-plus text-lg text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- GRID PETISCOS FIM -->
+    </div>
+    <!-- FIM MENU -->
+
+    <!-- MODAL CART -->
+
+    <div
+      class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden"
+      id="cart-modal"
+    >
+      <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[600px]">
+        <h2 class="text-center font-bold text-2xl mb-2">Meu carrinho</h2>
+
+        <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+
+        <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
+
+        <p class="font-bold mt-4">Endereço de entrega</p>
+
+        <input
+          type="text"
+          placeholder="Digite seu endereço completo..."
+          id="address"
+          class="w-full border-2 p-1 rounded my-1"
+        />
+
+        <p class="text-red-500 hidden" id="address-warn">
+          Digite seu endereço completo!
+        </p>
+
+        <div class="flex items-center justify-between mt-5 w-full">
+          <button id="close-modal-btn" class="font-bold">Fechar</button>
+          <button
+            id="checkout-btn"
+            class="bg-green-500 text-white px-4 py-1 font-bold rounded"
+          >
+            Finalizar Pedido
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- FIM MODAL CART -->
+    <!-- BUTTON CART FOOTER -->
+    <footer
+      class="w-full bg-red-500 py-2 fixed bottom-0 z-40 flex items-center justify-center"
+    >
+      <button
+        class="flex items-center gap-2 text-white font-bold"
+        id="cart-btn"
+      >
+        (<span id="cart-counter">0</span>) Ver meu carrinho
+        <i class="fa fa-cart-plus text-lg text-white"></i>
+      </button>
+    </footer>
+    <!-- BUTTON CART FOOTER FIM -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
