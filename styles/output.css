@@ -897,6 +897,10 @@ video {
   height: 100%;
 }
 
+.max-h-\[400px\] {
+  max-height: 400px;
+}
+
 .w-28 {
   width: 7rem;
 }
@@ -1960,7 +1964,7 @@ video {
 }
 
 .bg-home {
-  background-image: url('/assets/fundo.Avif');
+  background-image: url('/assets/fundo1.jpg');
 }
 
 .decoration-slice {
