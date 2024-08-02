@@ -170,7 +170,7 @@ function addToCart(name, price){
         
 
         const message = encodeURIComponent(cartItems)
-        const phone = "11977318968"
+        const phone = "1177318968"
 
         window.open(`https://wa.me/${phone}?text=${message} Endereço: ${addressInput.value}`, "_blank")
 
