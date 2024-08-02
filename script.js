@@ -170,7 +170,7 @@ function addToCart(name, price){
         
 
         const message = encodeURIComponent(cartItems)
-        const phone = "11995053357"
+        const phone = "https://api.whatsapp.com/send?phone=5511995053357&text=Quer%20fazer%20um%20pedido!"
 
         window.open(`https://wa.me/${phone}?text=${message} Endereço: ${addressInput.value}`, "_blank")
 
