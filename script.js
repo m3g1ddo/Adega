@@ -170,7 +170,7 @@ function addToCart(name, price){
         
 
         const message = encodeURIComponent(cartItems)
-        const phone = "https://api.whatsapp.com/send?phone=5511995053357&text=Quer%20fazer%20um%20pedido!"
+        const phone = "7398169453"
 
         window.open(`https://wa.me/${phone}?text=${message} Endereço: ${addressInput.value}`, "_blank")
 
@@ -181,7 +181,7 @@ function addToCart(name, price){
     function checkAdegaOpen(){
         const data = new Date();
         const hora = data.getHours();
-        return hora  >= 9 && hora < 2;
+        return hora  >= 9 && hora < 24;
     }
 
 
