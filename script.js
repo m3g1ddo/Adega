@@ -181,7 +181,7 @@ function addToCart(name, price){
     function checkAdegaOpen(){
         const data = new Date();
         const hora = data.getHours();
-        return hora  >= 0 && hora < 2;
+        return hora  >= 9 && hora < 24;
     }
 
 
